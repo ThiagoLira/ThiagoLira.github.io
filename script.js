@@ -22,7 +22,7 @@ function callGeneratorAjax(){
     displayLoader(loaders,"inline-block")
     $.ajax({
         method: 'GET',
-        url: ':ec2-18-228-40-159.sa-east-1.compute.amazonaws.com:443/?sample=' + prefix,
+        url: 'ec2-18-228-40-159.sa-east-1.compute.amazonaws.com:443/?sample=' + prefix,
         // url: 'http://localhost:5000/?sample=' + prefix,  
         dataType: 'jsonp', //change the datatype to 'jsonp' works in most cases
         success: (res) => {
